@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Font */
+@font-face {
+    font-family: 'Okra';
+    src: local('Okra'),url('./fonts/DTCOkraSans1.otf') format('truetype');
+}
