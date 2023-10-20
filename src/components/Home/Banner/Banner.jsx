@@ -2,10 +2,10 @@ import { LOGO_WHITE } from '../../../utils/constants'
 
 const Banner = () => {
   return (
-    <div className='text-white -mt-64'>
-        <div className='flex flex-col space-y-10 justify-center items-center'>
+    <div className='text-white -mt-80'>
+        <div className='flex flex-col space-y-8 justify-center items-center'>
             <img className='w-72' src={LOGO_WHITE} />
-            <h1 className='text-4xl'>Discover the best food & drinks in Delhi NCR</h1>
+            <h1 className='text-[40px]'>Discover the best food & drinks in Delhi NCR</h1>
             {/* <input className='py-4 px-96 rounded-md'/> */}
             <div className="relative w-full max-w-7xl mx-auto mt-10">       
                 <div className="relative">

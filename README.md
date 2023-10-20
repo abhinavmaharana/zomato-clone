@@ -9,6 +9,9 @@
 - Banner Title
 - Banner Subtitle
 - Search for restaurant Input Box
+- Firebase setup
+- Form Validation
+- fetch data for quick links 
 
 
 
