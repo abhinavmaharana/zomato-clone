@@ -15,9 +15,9 @@ const QuickLinks = () => {
 
     const json = await data.json();
 
-    console.log(json);
+    // console.log(json);
 
-    console.log(json.page_data.sections.SECTION_QUICK_SEARCH.items);
+    // console.log(json.page_data.sections.SECTION_QUICK_SEARCH.items);
   
     setQuickList(json?.page_data?.sections?.SECTION_QUICK_SEARCH?.items)
   }

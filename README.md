@@ -12,6 +12,8 @@
 - Firebase setup
 - Form Validation
 - fetch data for quick links 
+- Collection Section
+- Popular Localities in and around Location
 
 
 

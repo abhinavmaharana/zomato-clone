@@ -1,6 +1,8 @@
 import { HOMEPAGEBG } from "../../utils/constants"
 import Banner from "./Banner/Banner"
+import Collections from "./Collections/Collections"
 import Header from "./Header/Header"
+import PopularLocalities from "./PopularLocalities/PopularLocalities"
 import QuickLinks from "./QuickLinks/QuickLinks"
 
 
@@ -24,6 +26,8 @@ const Home = () => {
         </div>
         <div className="flex min-h-screen flex-col items-center justify-between p-24 ml-12">
             <QuickLinks />
+            <Collections />
+            <PopularLocalities />
         </div>
     </div>
   )
