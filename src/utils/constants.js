@@ -1,6 +1,9 @@
 export const LOGO =
   'https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png';
 
+export const USER_AVATAR =
+  'https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdpkabKqQAxyWzo6QW_ZnPz1IZLqlmNfK-t4L1VIeV1DY00JhLo_LMVFp936keDxj-V5UELAVJrU--iUUY2MaDxQSSO-0qw.png?r=e6e';
+
 export const LOGO_WHITE =
   'https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png';
 
@@ -43,73 +46,11 @@ export const COLLECTIONS = [
   },
 ];
 
-export const AccordianData = [
-  {
-    id: 1,
-    title: 'Popular cuisines near me',
-    description:
-      'Bakery food near me Beverages food near me Biryani food near me Burger food near me Chinese food near me Continental food near me Desserts food near me Ice Cream food near me Italian food near me Mithai food near me Momos food near me Mughlai food near me North Indian food near me Pasta food near me Pizza food near me Rolls food near me Sandwich food near me Shake food near me South Indian food near me Street food near me',
-  },
-  {
-    id: 2,
-    title: 'Popular restaurant types near me',
-    description:
-      'Bakeries near meBars near meBeverage Shops near meBhojanalya near meCafés near meCasual Dining near meClubs near meCocktail Bars near meConfectioneries near meDessert Parlors near meDhabas near meFine Dining near meFood Courts near meFood Trucks near meIrani Cafes near meKiosks near meLounges near meMeat Shops near meMicrobreweries near mePaan Shop near mePubs near meQuick Bites near meSweet Shops near me',
-  },
-  {
-    id: 3,
-    title: 'Top Restaurant Chains',
-    description: '',
-  },
-  {
-    id: 4,
-    title: 'Cities We Deliver To',
-    description: '',
-  },
-];
+export const APPLESTORE =
+  'https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png';
 
-export const FooterData = [
-  {
-    id: 1,
-    title: 'About Zomato',
-    tag1: 'Who We Are',
-    tag2: 'Blog',
-    tag3: 'Work With Us',
-    tag4: 'Investor Relations',
-    tag5: 'Report Fraud',
-    tag6: 'Press Kit',
-    tag7: 'Contact Us',
-  },
-  {
-    id: 2,
-    title: 'Zomaverse',
-    tag1: 'Zomato',
-    tag2: 'Blinkit',
-    tag3: 'Feeding India',
-    tag4: 'Hyperpure',
-    tag5: 'Zomaland',
-  },
-  {
-    id: 3,
-    title: 'For Restaurants',
-    tag1: 'Partner with us',
-    tag2: 'Apps For You',
-  },
-  {
-    id: 4,
-    title: 'For Enterprises',
-    tag1: 'Zomato For Enterprise',
-  },
-  {
-    id: 5,
-    title: 'Learn More',
-    tag1: 'Privacy',
-    tag2: 'Security',
-    tag3: 'Terms',
-    tag4: 'Sitemap',
-  },
-  {
-    id: 6,
-    title: 'Social Links',
-  },
-];
+export const GOOGLEPLAYSTORE =
+  'https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png';
+
+export const RESTUARANTLIST =
+  'https://www.zomato.com/webroutes/getPage?page_url=/ncr/';

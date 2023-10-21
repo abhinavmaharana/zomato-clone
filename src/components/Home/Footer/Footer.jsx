@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 
-import { LOGO } from '../../../utils/constants';
+import { APPLESTORE, GOOGLEPLAYSTORE, LOGO } from '../../../utils/constants';
 
 const Footer = () => {
   return (
@@ -239,7 +239,16 @@ const Footer = () => {
           <div>
             <p className="font-medium text-gray-900 uppercase">Social Links</p>
 
-            <ul className="mt-6 space-y-4 text-sm"></ul>
+            <ul className="mt-6 space-y-4 text-sm">
+              <div className="space-y-4">
+                <button className="">
+                  <img className="w-48" src={APPLESTORE} />
+                </button>
+                <button className="">
+                  <img className="w-48" src={GOOGLEPLAYSTORE} />
+                </button>
+              </div>
+            </ul>
           </div>
         </div>
         <div class="mt-24 border-t border-gray-100 pt-6">

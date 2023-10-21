@@ -16,6 +16,16 @@
 - Popular Localities in and around Location
 - Explore More Options
 - Footer
+- Login Form
+- Sign up Form
+- Create SignUp User Account
+- Implement Sign In user Api
+- Implemented Sign out 
+- Update Profile
+- BugFix: Sign up user displayName and profile picture update
+- BugFix: if the user is not logged in Redirect /browse to Login Page and vice-versa
+- Unsubscibed to the onAuthStateChanged callback
+- Listing Page Header
 
 # Features
 
