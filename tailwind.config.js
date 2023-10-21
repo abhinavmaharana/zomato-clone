@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -14,10 +11,9 @@ export default {
         lightGray: '#F8F8F8',
         primaryText: '#1D1D1D',
         secondaryText: '#000000',
-        ternaryText: '#888888'
+        ternaryText: '#888888',
       },
     },
   },
   plugins: [],
-}
-
+};

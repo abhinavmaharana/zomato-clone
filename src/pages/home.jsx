@@ -1,15 +1,15 @@
-import Home from "../components/Home/Home"
+import Home from '../components/Home/Home';
 // import QuickLinks from "../components/Home/QuickLinks/QuickLinks"
 
 const HomePage = () => {
   return (
     <>
-        <Home />
-        {/* <div className="">
+      <Home />
+      {/* <div className="">
             <QuickLinks />
         </div> */}
     </>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

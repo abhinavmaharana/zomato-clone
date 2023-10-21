@@ -1,11 +1,9 @@
-import { useEffect, useState } from "react"
-import { QUICK_LINKS } from "../../../utils/constants";
-
+import { useEffect, useState } from 'react';
+import { QUICK_LINKS } from '../../../utils/constants';
 
 const QuickLinks = () => {
-
   const [quickList, setQuickList] = useState([]);
-  
+
   useEffect(() => {
     fetchQuickData();
   }, []);
@@ -18,15 +16,18 @@ const QuickLinks = () => {
     // console.log(json);
 
     // console.log(json.page_data.sections.SECTION_QUICK_SEARCH.items);
-  
-    setQuickList(json?.page_data?.sections?.SECTION_QUICK_SEARCH?.items)
-  }
+
+    setQuickList(json?.page_data?.sections?.SECTION_QUICK_SEARCH?.items);
+  };
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[420px] -mt-8">
-      {quickList?.map((list) => {
+      {quickList?.map(list => {
         return (
-          <div key={list.title} className="bg-white rounded-xl w-[380px] border-2 border-[#E8E8E8]">
+          <div
+            key={list.title}
+            className="bg-white rounded-xl w-[380px] border-2 border-[#E8E8E8]"
+          >
             <div className="relative overflow-hidden rounded-t-xl">
               <img
                 className="w-full h-[180px] object-cover"
@@ -42,7 +43,7 @@ const QuickLinks = () => {
         );
       })}
     </div>
-  )
-}
+  );
+};
 
-export default QuickLinks
+export default QuickLinks;

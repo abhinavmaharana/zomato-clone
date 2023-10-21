@@ -1,19 +1,18 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom"
-import HomePage from "../../pages/home"
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import HomePage from '../../pages/home';
 
 const Body = () => {
-
   const appRouter = createBrowserRouter([
     {
-        path: "/",
-        element: <HomePage />
+      path: '/',
+      element: <HomePage />,
     },
-  ])
+  ]);
   return (
     <div>
-        <RouterProvider router={appRouter} />
+      <RouterProvider router={appRouter} />
     </div>
-  )
-}
+  );
+};
 
-export default Body
+export default Body;
