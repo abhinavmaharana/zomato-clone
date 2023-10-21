@@ -26,6 +26,7 @@
 - BugFix: if the user is not logged in Redirect /browse to Login Page and vice-versa
 - Unsubscibed to the onAuthStateChanged callback
 - Listing Page Header
+- Tabs Cards with icons
 
 # Features
 

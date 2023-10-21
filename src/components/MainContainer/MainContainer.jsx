@@ -2,6 +2,7 @@
 import React from 'react';
 import Footer from '../Home/Footer/Footer';
 import Header from './Header/Header';
+import FilterTabs from './FilterTabs/FilterTabs';
 
 const MainContainer = () => {
   return (
@@ -34,7 +35,12 @@ const MainContainer = () => {
             </span>
           </div>
         </div>
+        <div className="inset-0 px-40 mt-5">
+          <FilterTabs />
+        </div>
+        <div className="ml-24 border-t border-1" />
       </div>
+
       {/* <Footer /> */}
     </div>
   );
