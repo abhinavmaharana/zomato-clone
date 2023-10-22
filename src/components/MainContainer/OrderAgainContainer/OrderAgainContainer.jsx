@@ -33,7 +33,7 @@ const OrderAgainContainer = () => {
       {orderAgain.map((data, index) => (
         <div key={index}>
           <h1 className="text-3xl">{data?.title}</h1>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 space-x-[35px] mt-5">
+          <div className="flex flex-col lg:flex-row space-x-[35px] mt-5">
             <div className="text-center space-y-2">
               {/* Image */}
               <img

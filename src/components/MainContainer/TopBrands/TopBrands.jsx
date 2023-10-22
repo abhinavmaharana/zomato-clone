@@ -31,7 +31,7 @@ const TopBrands = () => {
           <div className="flex flex-col lg:flex-row space-x-[35px] mt-5">
             <div className="text-center space-y-2">
               {/* Image */}
-              <div className="bg-[#FFBC0D] p-4 rounded-full shadow-2xl">
+              <div className="bg-[#FFBC0D] p-2 rounded-full shadow-2xl">
                 <img
                   className="w-36 rounded-full"
                   src={data?.items[0]?.image?.url}
@@ -42,7 +42,7 @@ const TopBrands = () => {
             </div>
             <div className="text-center space-y-2">
               {/* Image */}
-              <div className="bg-white p-4 rounded-full shadow-2xl">
+              <div className="bg-white p-2 rounded-full shadow-2xl">
                 <img
                   className="w-36 rounded-full"
                   src={data?.items[1]?.image?.url}
@@ -53,7 +53,7 @@ const TopBrands = () => {
             </div>
             <div className="text-center space-y-2">
               {/* Image */}
-              <div className="bg-white p-4 rounded-full shadow-2xl">
+              <div className="bg-white p-2 rounded-full shadow-2xl">
                 <img
                   className="w-36 rounded-full"
                   src={data?.items[2]?.image?.url}
@@ -64,7 +64,7 @@ const TopBrands = () => {
             </div>
             <div className="text-center space-y-2">
               {/* Image */}
-              <div className="bg-white p-4 rounded-full shadow-2xl">
+              <div className="bg-white p-2 rounded-full shadow-2xl">
                 <img
                   className="w-36 rounded-full"
                   src={data?.items[3]?.image?.url}
@@ -75,7 +75,7 @@ const TopBrands = () => {
             </div>
             <div className="text-center space-y-2">
               {/* Image */}
-              <div className="bg-white p-4 rounded-full shadow-2xl">
+              <div className="bg-white p-2 rounded-full shadow-2xl">
                 <img
                   className="w-36 rounded-full"
                   src={data?.items[4]?.image?.url}
@@ -86,7 +86,7 @@ const TopBrands = () => {
             </div>
             <div className="text-center space-y-2 ">
               {/* Image */}
-              <div className="bg-white p-4 rounded-full shadow-2xl">
+              <div className="bg-white p-2 rounded-full shadow-2xl">
                 <img
                   className="w-36 rounded-full"
                   src={data?.items[5]?.image?.url}
