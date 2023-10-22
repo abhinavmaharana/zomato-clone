@@ -1,6 +1,6 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import HomePage from '../../pages/home';
-import MainContainer from '../MainContainer/MainContainer';
+import Main from '../../pages/main';
 
 const Body = () => {
   const appRouter = createBrowserRouter([
@@ -10,7 +10,7 @@ const Body = () => {
     },
     {
       path: '/ncr/restaurants',
-      element: <MainContainer />,
+      element: <Main />,
     },
   ]);
   return (

@@ -27,6 +27,7 @@
 - Unsubscibed to the onAuthStateChanged callback
 - Listing Page Header
 - Tabs Cards with icons
+- Filters
 
 # Features
 
@@ -57,4 +58,7 @@
   - Location based resturants Section
     - Location Title
     - Restaurants Cards
+    - Restaurants Promoted Cards
   - Explore options near me
+- Resturant Menu Page
+  -

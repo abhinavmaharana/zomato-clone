@@ -36,14 +36,14 @@ const FilterTabs = () => {
           <li key={index}>
             <a
               href={`#page${index + 1}`}
-              className="flex justify-center border-b-4 border-transparent hover:text-secondary hover:border-secondary py-4"
+              className="flex justify-center border-b-4 border-transparent hover:text-secondary hover:border-secondary transition ease-in-out py-4"
             >
               <div className="flex justify-center items-center space-x-5">
                 <div
                   className={`bg-[#F8F8F8] p-4 rounded-full ${
                     activeIndex === index
-                      ? 'hover:bg-[#FCEEC0]'
-                      : 'hover:active:bg-[#FCEEC0]'
+                      ? 'hover:bg-[#FCEEC0] transition ease-in-out'
+                      : 'hover:active:bg-[#FCEEC0] transition ease-in-out'
                   }`}
                 >
                   <img className="w-12" src={tab.image} />
