@@ -27,8 +27,8 @@ const TopBrands = () => {
     <div>
       {topBrands.map((data, index) => (
         <div key={index}>
-          <h1 className="text-3xl">{data?.title}</h1>
-          <div className="flex flex-col lg:flex-row space-x-[35px] mt-5">
+          <h1 className="text-3xl font-semibold">{data?.title}</h1>
+          <div className="flex flex-col lg:flex-row space-x-[35px] mt-10">
             <div className="text-center space-y-2">
               {/* Image */}
               <div className="bg-[#FFBC0D] p-2 rounded-full shadow-2xl">

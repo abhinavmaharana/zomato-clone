@@ -43,10 +43,10 @@ const MainContainer = () => {
             <FilterTabs />
           </div>
           <div className="ml-24 border-t border-1" />
-          <div className="inset-0 px-40 mt-5">
+          <div className="inset-0 px-40 mt-6">
             <FilterList />
           </div>
-          <div className="inset-0 px-40 mt-5 bg-lightGray p-10">
+          <div className="inset-0 px-40 mt-6 bg-lightGray p-14">
             <OrderAgainContainer />
           </div>
           <div className="inset-0 px-40 mt-5 p-10">
