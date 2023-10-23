@@ -31,6 +31,7 @@
 - Inspiration for your first Orer section
 - Top brands section
 - Location based resturants Section (Location Title, Restaurants Cards, Restaurants Promoted Cards)
+- Resturant Menu Page
 
 
 # Features
@@ -65,4 +66,5 @@
     - Restaurants Promoted Cards
   - Explore options near me
 - Resturant Menu Page
-  -
+  - Images
+  - Title, cusine, timing, rating

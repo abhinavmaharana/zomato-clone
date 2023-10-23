@@ -20,7 +20,7 @@ const LocationBasedRestaurants = () => {
     setLocationBasedRes(json?.page_data?.sections?.SECTION_SEARCH_RESULT);
   };
 
-  console.log(locationBasedRes.slice(2, 12));
+  // console.log(locationBasedRes.slice(2, 12));
 
   const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
 
