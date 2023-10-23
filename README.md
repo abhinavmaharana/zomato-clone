@@ -28,6 +28,10 @@
 - Listing Page Header
 - Tabs Cards with icons
 - Filters
+- Inspiration for your first Orer section
+- Top brands section
+- Location based resturants Section (Location Title, Restaurants Cards, Restaurants Promoted Cards)
+
 
 # Features
 

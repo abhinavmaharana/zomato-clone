@@ -54,3 +54,6 @@ export const GOOGLEPLAYSTORE =
 
 export const RESTUARANTLIST =
   'https://www.zomato.com/webroutes/getPage?page_url=/ncr/';
+
+export const RESTUARANTLISTITEM =
+  'https://www.zomato.com/webroutes/getPage?page_url=/ncr/restaurants';

@@ -15,7 +15,7 @@ const TopBrands = () => {
       const data = await response.json();
 
       if (data?.page_data?.sections?.SECTION_SEARCH_RESULT) {
-        setTopBrands([data.page_data.sections.SECTION_SEARCH_RESULT[1]]);
+        setTopBrands([data?.page_data?.sections?.SECTION_SEARCH_RESULT[1]]);
       } else {
         console.error('Data structure is incorrect.');
       }
@@ -38,7 +38,7 @@ const TopBrands = () => {
                 />
               </div>
               {/* Name */}
-              <p>{data?.items[0].name}</p>
+              <p>{data?.items[0]?.name}</p>
             </div>
             <div className="text-center space-y-2">
               {/* Image */}
@@ -49,7 +49,7 @@ const TopBrands = () => {
                 />
               </div>
               {/* Name */}
-              <p>{data?.items[1].name}</p>
+              <p>{data?.items[1]?.name}</p>
             </div>
             <div className="text-center space-y-2">
               {/* Image */}
@@ -60,7 +60,7 @@ const TopBrands = () => {
                 />
               </div>
               {/* Name */}
-              <p>{data?.items[2].name}</p>
+              <p>{data?.items[2]?.name}</p>
             </div>
             <div className="text-center space-y-2">
               {/* Image */}
@@ -71,7 +71,7 @@ const TopBrands = () => {
                 />
               </div>
               {/* Name */}
-              <p>{data?.items[3].name}</p>
+              <p>{data?.items[3]?.name}</p>
             </div>
             <div className="text-center space-y-2">
               {/* Image */}
@@ -82,7 +82,7 @@ const TopBrands = () => {
                 />
               </div>
               {/* Name */}
-              <p>{data?.items[4].name}</p>
+              <p>{data?.items[4]?.name}</p>
             </div>
             <div className="text-center space-y-2 ">
               {/* Image */}
@@ -93,7 +93,7 @@ const TopBrands = () => {
                 />
               </div>
               {/* Name */}
-              <p>{data?.items[5].name}</p>
+              <p>{data?.items[5]?.name}</p>
             </div>
           </div>
         </div>

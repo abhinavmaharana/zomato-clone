@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import Footer from '../Home/Footer/Footer';
 import Header from './Header/Header';
 import FilterTabs from './FilterTabs/FilterTabs';
 import FilterList from './FilterList/FilterList';
 import OrderAgainContainer from './OrderAgainContainer/OrderAgainContainer';
 import TopBrands from './TopBrands/TopBrands';
+import LocationBasedRestaurants from './LocationBasedRestaurants/LocationBasedRestaurants';
 
 const MainContainer = () => {
   return (
@@ -51,6 +51,9 @@ const MainContainer = () => {
           </div>
           <div className="inset-0 px-40 mt-5 p-10">
             <TopBrands />
+          </div>
+          <div className="inset-0 px-40 mt-5 p-10">
+            <LocationBasedRestaurants />
           </div>
         </div>
       </div>
