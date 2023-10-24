@@ -32,6 +32,7 @@
 - Top brands section
 - Location based resturants Section (Location Title, Restaurants Cards, Restaurants Promoted Cards)
 - Resturant Menu Page
+- Bug fix (UI Fixes)
 
 
 # Features

@@ -6,6 +6,8 @@ import FilterList from './FilterList/FilterList';
 import OrderAgainContainer from './OrderAgainContainer/OrderAgainContainer';
 import TopBrands from './TopBrands/TopBrands';
 import LocationBasedRestaurants from './LocationBasedRestaurants/LocationBasedRestaurants';
+import Footer from '../Home/Footer/Footer';
+import ExploreOptions from '../Home/ExploreOptions/ExploreOptions';
 
 const MainContainer = () => {
   return (
@@ -16,6 +18,7 @@ const MainContainer = () => {
           <div className="inset-0 flex justify-center items-center p-40">
             <Header />
           </div>
+
           <div className="inset-0 flex px-40 -mt-52">
             <div className="flex items-center space-x-2 overflow-hidden whitespace-nowrap">
               <a href="#" className="text-gray-400 hover:text-secondary">
@@ -39,10 +42,12 @@ const MainContainer = () => {
               </span>
             </div>
           </div>
-          <div className="inset-0 px-40 mt-5">
+        </div>
+        <div className="flex min-h-screen flex-col justify-between pt-24">
+          <div className="inset-0 px-40 mt-12">
             <FilterTabs />
           </div>
-          <div className="ml-24 border-t border-1" />
+          <div className=" border-t border-1" />
           <div className="inset-0 px-40 mt-6">
             <FilterList />
           </div>
@@ -55,7 +60,11 @@ const MainContainer = () => {
           <div className="inset-0 px-40 mt-5 p-10">
             <LocationBasedRestaurants />
           </div>
+          <div className="inset-0 px-40 p-14">
+            <ExploreOptions />
+          </div>
         </div>
+        <Footer />
       </div>
     </div>
   );

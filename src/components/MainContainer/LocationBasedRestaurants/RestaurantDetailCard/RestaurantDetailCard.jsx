@@ -6,7 +6,10 @@ const RestaurantDetailCard = () => {
   const { name } = useParams();
   const [restaurantMenu, setRestaurantMenu] = useState([]);
 
-  console.log(name);
+  console.log(
+    restaurantMenu?.page_data?.sections?.SECTION_BASIC_INFO?.rating_new?.ratings
+      ?.DINING?.rating,
+  );
 
   useEffect(() => {
     fetchMenu();
@@ -34,7 +37,7 @@ const RestaurantDetailCard = () => {
 
   return (
     <div>
-      <div className="inset-0 flex -mt-52">
+      <div className="inset-0 flex mt-5">
         <div className="flex items-center space-x-2 overflow-hidden whitespace-nowrap">
           <a href="#" className="text-gray-400 hover:text-secondary">
             Home
@@ -69,7 +72,7 @@ const RestaurantDetailCard = () => {
                     className={
                       index === 0
                         ? 'w-[700px] h-[400px]'
-                        : 'w-[200px] h-[400px]'
+                        : 'w-[260px] h-[400px]'
                     }
                   />
                 );
@@ -77,10 +80,45 @@ const RestaurantDetailCard = () => {
         </div>
       </div>
       <div className="inset-0 grid space-y-4 mt-6">
-        <div>
-          <h1 className="text-4xl font-semibold">
-            {restaurantMenu?.page_data?.sections?.SECTION_BASIC_INFO?.name}
-          </h1>
+        <div className="grid grid-cols-2 gap-x-[550px] justify-evenly items-center">
+          <div>
+            <h1 className="text-4xl font-semibold w-[700px]">
+              {restaurantMenu?.page_data?.sections?.SECTION_BASIC_INFO?.name}
+            </h1>
+          </div>
+          <div className="flex items-center space-x-10 w-[300px]">
+            <div className="flex space-x-3 w-36 items-center">
+              <p className="bg-[#24963F] text-white py-1 px-5 rounded-lg">
+                {
+                  restaurantMenu?.page_data?.sections?.SECTION_BASIC_INFO
+                    ?.rating_new?.ratings?.DINING?.rating
+                }
+              </p>
+              <p className="text-sm">
+                {
+                  restaurantMenu?.page_data?.sections?.SECTION_BASIC_INFO
+                    ?.rating_new?.ratings?.DINING?.subtext
+                }
+              </p>
+            </div>
+            <div className="flex space-x-3 w-36 items-center">
+              <p className="bg-[#267E3E] text-white py-1 px-5 rounded-lg">
+                {
+                  restaurantMenu?.page_data?.sections?.SECTION_BASIC_INFO
+                    ?.rating_new?.ratings?.DELIVERY?.rating
+                }
+              </p>
+              <div className="flex flex-col">
+                <p className="text-sm">
+                  {
+                    restaurantMenu?.page_data?.sections?.SECTION_BASIC_INFO
+                      ?.rating_new?.ratings?.DELIVERY?.reviewCount
+                  }
+                  {` ${restaurantMenu?.page_data?.sections?.SECTION_BASIC_INFO?.rating_new?.ratings?.DELIVERY?.sideSubTitle}`}
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="space-y-2">
           <p className="text-gray-400">
@@ -102,6 +140,16 @@ const RestaurantDetailCard = () => {
                 ?.timing_desc
             }
           </p>
+        </div>
+      </div>
+      <div className="inset-0 grid space-y-4 mt-6">
+        <div className="space-x-3">
+          <button className="py-2 px-5 border-2 border-[#A2A0A0] rounded-lg">
+            Direction
+          </button>
+          <button className="py-2 px-5 border-2 border-[#A2A0A0] rounded-lg">
+            Share
+          </button>
         </div>
       </div>
     </div>

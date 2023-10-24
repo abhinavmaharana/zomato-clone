@@ -10,6 +10,8 @@ const Restaurantpage = () => {
           <div className="inset-0 flex justify-center items-center p-48 -mt-8">
             <Header />
           </div>
+        </div>
+        <div className="flex min-h-screen flex-col justify-between pt-24">
           <div className="inset-0 flex px-48">
             <RestaurantDetailCard />
           </div>
