@@ -33,6 +33,11 @@
 - Location based resturants Section (Location Title, Restaurants Cards, Restaurants Promoted Cards)
 - Resturant Menu Page
 - Bug fix (UI Fixes)
+- Resturant Menu Page
+  - Images
+  - Title, cusine, timing, rating
+  - Order Online Section
+    - Order Menu list
 
 
 # Features
@@ -69,3 +74,10 @@
 - Resturant Menu Page
   - Images
   - Title, cusine, timing, rating
+  - Overview Section
+  - Order Online Section
+    - Order Menu list
+  - Reviews
+  - Photos
+  - Menu
+  - Add to cart functionality

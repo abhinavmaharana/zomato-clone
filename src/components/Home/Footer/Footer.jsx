@@ -6,10 +6,10 @@ const Footer = () => {
   return (
     <footer className="bg-lightWhite">
       <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-4 lg:px-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
+        <div className="sm:flex sm:items-center sm:justify-between">
           <img className="w-44" src={LOGO} />
 
-          <ul class="mt-8 flex justify-start gap-2 sm:mt-0 sm:justify-end">
+          <ul className="mt-8 flex justify-start gap-2 sm:mt-0 sm:justify-end">
             <div>
               <select className="px-6 py-3 bg-transparent text-black border-2 rounded-lg">
                 <option value="India">
@@ -251,9 +251,9 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div class="mt-24 border-t border-gray-100 pt-6">
-          <div class="text-center sm:flex sm:justify-between sm:text-left">
-            <p class="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
+        <div className="mt-24 border-t border-gray-100 pt-6">
+          <div className="text-center sm:flex sm:justify-between sm:text-left">
+            <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
               By continuing past this page, you agree to our Terms of Service,
               Cookie Policy, Privacy Policy and Content Policies. All trademarks
               are properties of their respective owners. 2008-

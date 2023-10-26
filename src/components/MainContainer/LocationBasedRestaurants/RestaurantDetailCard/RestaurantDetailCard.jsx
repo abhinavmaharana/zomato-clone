@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import RestaurantDetailsFilterTabs from './RestaurantDetailsFilterTabs/RestaurantDetailsFilterTabs';
 
 const RestaurantDetailCard = () => {
   const { name } = useParams();
@@ -23,7 +24,7 @@ const RestaurantDetailCard = () => {
 
       if (response.status === 200) {
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
         setRestaurantMenu(data);
       } else {
         console.error('Request failed with status:', response.status);
@@ -151,6 +152,10 @@ const RestaurantDetailCard = () => {
             Share
           </button>
         </div>
+      </div>
+      <div className="inset-0 grid space-y-4 mt-6">
+        {/* Tabs */}
+        <RestaurantDetailsFilterTabs restaurantMenu={restaurantMenu} />
       </div>
     </div>
   );

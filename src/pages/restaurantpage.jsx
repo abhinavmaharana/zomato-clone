@@ -1,3 +1,4 @@
+import Footer from '../components/Home/Footer/Footer';
 import Header from '../components/MainContainer/LocationBasedRestaurants/RestaurantDetailCard/Header/Header';
 import RestaurantDetailCard from '../components/MainContainer/LocationBasedRestaurants/RestaurantDetailCard/RestaurantDetailCard';
 
@@ -16,6 +17,7 @@ const Restaurantpage = () => {
             <RestaurantDetailCard />
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );
