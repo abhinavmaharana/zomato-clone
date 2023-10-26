@@ -157,6 +157,24 @@ const RestaurantDetailCard = () => {
         {/* Tabs */}
         <RestaurantDetailsFilterTabs restaurantMenu={restaurantMenu} />
       </div>
+      {/* <div className="inset-0 grid space-y-4">
+        <div className="space-y-16">
+          <div className="border-t">
+            <h1 className="uppercase text-xl mt-12">
+              Related To{' '}
+              {restaurantMenu?.page_data?.sections?.SECTION_BASIC_INFO?.name}
+            </h1>
+          </div>
+          <div>
+            <h1 className="uppercase text-xl">Restaurant </h1>
+          </div>
+          <div>
+            <h1 className="uppercase text-xl mb-2">
+              Frequent Searches Leading to this page{' '}
+            </h1>
+          </div>
+        </div>
+      </div> */}
     </div>
   );
 };

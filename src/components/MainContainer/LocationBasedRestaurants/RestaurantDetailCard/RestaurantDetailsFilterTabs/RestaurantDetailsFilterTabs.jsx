@@ -13,8 +13,8 @@ import PhotoGallery from './PhotoGallery/PhotoGallery';
 import RestaurantMenu from './RestaurantMenu/RestaurantMenu';
 
 const RestaurantDetailsFilterTabs = ({ restaurantMenu }) => {
-  console.log(restaurantMenu);
-  console.log(restaurantMenu?.page_data?.navbarSection[0]?.title);
+  // console.log(restaurantMenu);
+  // console.log(restaurantMenu?.page_data?.navbarSection[0]?.title);
   const data = [
     {
       label: restaurantMenu?.page_data?.navbarSection[0]?.title,
@@ -46,7 +46,7 @@ const RestaurantDetailsFilterTabs = ({ restaurantMenu }) => {
     <div>
       <Tabs value="html" className="max-w-full mt-5">
         <TabsHeader
-          className="bg-transparent space-x-10"
+          className="bg-transparent space-x-16 text-xl"
           indicatorProps={{
             className:
               'border-b border-secondary border-b-2 shadow-none !text-gray-900',

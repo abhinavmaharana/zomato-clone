@@ -2,19 +2,28 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addItem } from '../../../../../../../utils/Redux/cartSlice';
 
 const RestaurantCard = ({ menu }) => {
   const [resCard, setResCard] = useState([]);
+
+  const dispatch = useDispatch();
+
+  const handleAddItem = item => {
+    // Dispatch an action
+    dispatch(addItem(item));
+  };
 
   useEffect(() => {
     setResCard(menu?.menu?.categories);
   }, []);
 
-  console.log(resCard);
+  // console.log(resCard);
 
-  console.log(resCard[0]?.category?.items[0]?.item?.item_image_url);
+  // console.log(resCard[0]?.category?.items[0]?.item?.item_image_url);
 
-  console.log(resCard[0]?.category?.id);
+  // console.log(resCard[0]?.category?.id);
 
   return (
     <div className="mt-2 space-y-4">
@@ -44,7 +53,10 @@ const RestaurantCard = ({ menu }) => {
                     <p className="font-bold">₹ {item?.item?.display_price}</p>
                     <p className="line-clamp-2">{item?.item?.desc}</p>
                   </div>
-                  <button className="justify-end bg-secondary px-2 py-3 rounded-lg text-white">
+                  <button
+                    className="justify-end bg-secondary px-2 py-3 rounded-lg text-white"
+                    onClick={() => handleAddItem(item)}
+                  >
                     Add to Cart +
                   </button>
                 </div>

@@ -4,11 +4,12 @@ import { LOGO } from '../../../../../utils/constants';
 import { useState } from 'react';
 import { signOut } from 'firebase/auth';
 import { auth } from '../../../../../utils/firebase';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const navigate = useNavigate();
   const user = useSelector(store => store.user);
+  const cartItems = useSelector(store => store.cart.items);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const handleSignOut = () => {
@@ -32,7 +33,13 @@ const Header = () => {
         <div className="flex space-x-20 justify-between items-center text-black">
           <div>
             <div className="flex items-center ">
-              <img className="w-44" src={LOGO} alt="Download the app" />
+              <Link to="/">
+                <img
+                  className="w-44 cursor-pointer"
+                  src={LOGO}
+                  alt="Download the app"
+                />
+              </Link>
             </div>
           </div>
           <div className="">
@@ -49,6 +56,7 @@ const Header = () => {
               </div>
             </div>
           </div>
+
           <div className="flex justify-end items-center">
             <p>{user.email}</p>
             <img

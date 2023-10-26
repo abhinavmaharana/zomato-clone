@@ -9,3 +9,22 @@
     local('Okra'),
     url('./fonts/DTCOkraSans1.otf') format('truetype');
 }
+
+/* Width and color of the scrollbar track */
+::-webkit-scrollbar {
+  scrollbar-width: thin;
+  width: 0px; /* Adjust the width as needed */
+  background-color: #EF4F5F; /* Track color */
+}
+
+/* Style of the scrollbar thumb/handle */
+::-webkit-scrollbar-thumb {
+  background-color: #EF4F5F; /* Thumb color */
+  border: 2px solid #EF4F5F; /* Thumb border */
+}
+
+/* On hover, style the thumb/handle */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #EF4F5F; /* Hovered thumb color */
+}
+

@@ -36,8 +36,11 @@
 - Resturant Menu Page
   - Images
   - Title, cusine, timing, rating
+  - Overview Section
   - Order Online Section
     - Order Menu list
+  - Photos
+  - Add to cart functionality
 
 
 # Features

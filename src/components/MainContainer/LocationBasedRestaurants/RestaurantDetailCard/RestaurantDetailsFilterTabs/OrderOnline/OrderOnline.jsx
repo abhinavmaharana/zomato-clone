@@ -16,23 +16,24 @@ const OrderOnline = ({ restaurantMenu }) => {
   const menus = restaurantMenu?.page_data?.order?.menuList?.menus;
 
   return (
-    <div className="mt-2 h-screen">
+    <div className="mt-2 h-screen overflow-y-scroll max-h-screen mb-10">
       <Tabs
         value="html"
         orientation="vertical"
         className="max-w-full space-x-16"
       >
         <TabsHeader
-          className="bg-transparent space-y-6 w-[172px]"
+          className="bg-transparent space-y-6 w-[222px]"
           indicatorProps={{
-            className: 'border-b shadow-none !text-gray-900',
+            className:
+              'border-b border-secondary border-b-2 shadow-none !text-gray-900',
           }}
         >
           {menus?.map(menu => (
             <Tab
               key={menu?.menu?.name}
               value={menu?.menu?.name}
-              className="text-lg"
+              className="text-md"
             >
               {menu?.menu?.name}
             </Tab>
