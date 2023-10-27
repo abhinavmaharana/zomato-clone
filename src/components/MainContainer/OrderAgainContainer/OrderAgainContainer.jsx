@@ -47,7 +47,7 @@ const OrderAgainContainer = () => {
             <div className="text-center space-y-2">
               {/* Image */}
               <img
-                className="w-40 rounded-full"
+                className="w-[160px] rounded-full"
                 src={data?.items[0]?.image?.imageUrl}
               />
               {/* Name */}
@@ -56,7 +56,7 @@ const OrderAgainContainer = () => {
             <div className="text-center space-y-2">
               {/* Image */}
               <img
-                className="w-40 rounded-full"
+                className="w-[160px] rounded-full"
                 src={data?.items[1]?.image?.imageUrl}
               />
               {/* Name */}
@@ -65,7 +65,7 @@ const OrderAgainContainer = () => {
             <div className="text-center space-y-2">
               {/* Image */}
               <img
-                className="w-40 rounded-full"
+                className="w-[160px] rounded-full"
                 src={data?.items[2]?.image?.imageUrl}
               />
               {/* Name */}
@@ -74,7 +74,7 @@ const OrderAgainContainer = () => {
             <div className="text-center space-y-2">
               {/* Image */}
               <img
-                className="w-40 rounded-full"
+                className="w-[160px] rounded-full"
                 src={data?.items[3]?.image?.imageUrl}
               />
               {/* Name */}
@@ -83,7 +83,7 @@ const OrderAgainContainer = () => {
             <div className="text-center space-y-2">
               {/* Image */}
               <img
-                className="w-40 rounded-full"
+                className="w-[160px] rounded-full"
                 src={data?.items[4]?.image?.imageUrl}
               />
               {/* Name */}
@@ -92,7 +92,7 @@ const OrderAgainContainer = () => {
             <div className="text-center space-y-2">
               {/* Image */}
               <img
-                className="w-40 rounded-full"
+                className="w-[160px] rounded-full"
                 src={data?.items[5]?.image?.imageUrl}
               />
               {/* Name */}
