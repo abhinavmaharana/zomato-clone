@@ -2,15 +2,16 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import RestaurantDetailsFilterTabs from './RestaurantDetailsFilterTabs/RestaurantDetailsFilterTabs';
+import { ShimmerPostDetails } from 'react-shimmer-effects';
 
 const RestaurantDetailCard = () => {
   const { name } = useParams();
   const [restaurantMenu, setRestaurantMenu] = useState([]);
 
-  console.log(
-    restaurantMenu?.page_data?.sections?.SECTION_BASIC_INFO?.rating_new?.ratings
-      ?.DINING?.rating,
-  );
+  // console.log(
+  //   restaurantMenu?.page_data?.sections?.SECTION_BASIC_INFO?.rating_new?.ratings
+  //     ?.DINING?.rating,
+  // );
 
   useEffect(() => {
     fetchMenu();
@@ -36,7 +37,11 @@ const RestaurantDetailCard = () => {
 
   // <h1>Hello {restaurantMenu?.page_info?.pageTitle}</h1>
 
-  return (
+  return restaurantMenu?.length === 0 ? (
+    <div className="w-96 lg:w-[1440px] mt-6">
+      <ShimmerPostDetails card cta variant="EDITOR" />
+    </div>
+  ) : (
     <div>
       <div className="inset-0 flex mt-5">
         <div className="flex items-center space-x-2 overflow-hidden whitespace-nowrap">

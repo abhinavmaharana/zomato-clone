@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import { RESTUARANTLIST } from '../../../utils/constants';
+import { ShimmerCircularImage } from 'react-shimmer-effects';
 
 const OrderAgainContainer = () => {
   const [orderAgain, setOrderAgain] = useState([]);
@@ -28,7 +29,16 @@ const OrderAgainContainer = () => {
   //   console.log(orderAgain);
   //   console.log(orderAgain[0]?.items[0]?.image?.imageUrl);
 
-  return (
+  return orderAgain?.length === 0 ? (
+    <div className="flex flex-col lg:flex-row space-x-[35px]">
+      <ShimmerCircularImage size={144} />
+      <ShimmerCircularImage size={144} />
+      <ShimmerCircularImage size={144} />
+      <ShimmerCircularImage size={144} />
+      <ShimmerCircularImage size={144} />
+      <ShimmerCircularImage size={144} />
+    </div>
+  ) : (
     <div>
       {orderAgain.map((data, index) => (
         <div key={index}>

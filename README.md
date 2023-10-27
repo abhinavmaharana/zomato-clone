@@ -41,6 +41,7 @@
     - Order Menu list
   - Photos
   - Add to cart functionality
+- Added Shimmer effect
 
 
 # Features

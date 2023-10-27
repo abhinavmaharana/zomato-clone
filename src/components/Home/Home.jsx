@@ -29,7 +29,6 @@ const Home = () => {
         <QuickLinks />
         <Collections />
         <PopularLocalities />
-        {/* CTA */}
         <ExploreOptions />
       </div>
       <Footer />

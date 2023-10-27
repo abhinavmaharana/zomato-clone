@@ -1,8 +1,14 @@
+import { ShimmerFeaturedGallery } from 'react-shimmer-effects';
+
 /* eslint-disable react/prop-types */
 const PhotoGallery = ({ restaurantMenu }) => {
   console.log(restaurantMenu);
 
-  return (
+  return restaurantMenu?.length === 0 ? (
+    <div>
+      <ShimmerFeaturedGallery row={3} col={2} card frameHeight={600} />
+    </div>
+  ) : (
     <div className="h-screen">
       <h1 className="text-2xl font-bold text-black">
         {restaurantMenu?.page_data?.sections?.SECTION_BASIC_INFO?.name} Photos
@@ -20,11 +26,6 @@ const PhotoGallery = ({ restaurantMenu }) => {
       </div>
 
       <div className="grid grid-cols-5 gap-6 mt-8 -mb-5">
-        {/* {imageGallary?.IMAGES?.map((item) => {
-          <div>
-            <img className="w-20 h-20 rounded-lg" src={item?.thumbUrl} alt="" />
-          </div>
-        })} */}
         {restaurantMenu?.entities?.IMAGES &&
           Object.keys(restaurantMenu.entities.IMAGES).map(imageKey => {
             const image = restaurantMenu.entities.IMAGES[imageKey];

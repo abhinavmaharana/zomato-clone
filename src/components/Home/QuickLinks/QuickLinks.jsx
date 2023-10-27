@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { QUICK_LINKS } from '../../../utils/constants';
+import { ShimmerThumbnail } from 'react-shimmer-effects';
 
 const QuickLinks = () => {
   const [quickList, setQuickList] = useState([]);
@@ -20,7 +21,13 @@ const QuickLinks = () => {
     setQuickList(json?.page_data?.sections?.SECTION_QUICK_SEARCH?.items);
   };
 
-  return (
+  return quickList?.length === 0 ? (
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[420px]">
+      <ShimmerThumbnail width={380} height={280} className="rounded-xl" />
+      <ShimmerThumbnail width={380} height={280} className="rounded-xl" />
+      <ShimmerThumbnail width={380} height={280} className="rounded-xl" />
+    </div>
+  ) : (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[420px] -mt-8">
       {quickList?.map(list => {
         return (

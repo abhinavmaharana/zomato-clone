@@ -4,6 +4,7 @@ import { RESTUARANTLISTITEM } from '../../../utils/constants';
 import RestaurantCard, {
   withPromotedLabel,
 } from './RestaurantCard/RestaurantCard';
+import { ShimmerPostList } from 'react-shimmer-effects';
 
 const LocationBasedRestaurants = () => {
   const [locationBasedRes, setLocationBasedRes] = useState([]);
@@ -24,7 +25,11 @@ const LocationBasedRestaurants = () => {
 
   const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
 
-  return (
+  return locationBasedRes?.length === 0 ? (
+    <div>
+      <ShimmerPostList postStyle="STYLE_FOUR" col={3} row={2} gap={30} />
+    </div>
+  ) : (
     <div className="">
       <h1 className="text-3xl font-semibold">
         Delivery Restaurants in Connaught Place

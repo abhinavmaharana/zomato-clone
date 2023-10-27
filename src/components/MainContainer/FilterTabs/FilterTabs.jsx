@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import { RESTUARANTLIST } from '../../../utils/constants';
+import { ShimmerBadge, ShimmerCircularImage } from 'react-shimmer-effects';
 
 const FilterTabs = () => {
   const [filterCard, setFilterCard] = useState([]);
@@ -29,7 +30,22 @@ const FilterTabs = () => {
     setActiveIndex(index);
   };
 
-  return (
+  return filterCard?.length === 0 ? (
+    <div className="flex space-x-4 mt-6">
+      <div className="flex items-center space-x-4">
+        <ShimmerCircularImage size={80} />
+        <ShimmerBadge width={80} />
+      </div>
+      <div className="flex items-center space-x-4">
+        <ShimmerCircularImage size={80} />
+        <ShimmerBadge width={80} />
+      </div>
+      <div className="flex items-center space-x-4">
+        <ShimmerCircularImage size={80} />
+        <ShimmerBadge width={80} />
+      </div>
+    </div>
+  ) : (
     <div>
       <ul className="grid grid-flow-col w-[750px] text-center border-b border-gray-200 text-gray-500">
         {filterCard.map((tab, index) => (
