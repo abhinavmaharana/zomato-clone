@@ -40,8 +40,10 @@
   - Order Online Section
     - Order Menu list
   - Photos
+  - Reviews
   - Add to cart functionality
 - Added Shimmer effect
+- bugfix ui:- layout fix
 
 
 # Features
@@ -83,5 +85,8 @@
     - Order Menu list
   - Reviews
   - Photos
-  - Menu
   - Add to cart functionality
+- Cart Page
+  - User Cart Item display
+  - Total Amount
+  - Onclick Payment (Razorpay or stripe payment gateway)

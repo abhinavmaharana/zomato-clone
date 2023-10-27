@@ -10,7 +10,6 @@ import AboutRestaurant from './AboutRestaurant/AboutRestaurant';
 import OrderOnline from './OrderOnline/OrderOnline';
 import Reviews from './Reviews/Reviews';
 import PhotoGallery from './PhotoGallery/PhotoGallery';
-import RestaurantMenu from './RestaurantMenu/RestaurantMenu';
 
 const RestaurantDetailsFilterTabs = ({ restaurantMenu }) => {
   // console.log(restaurantMenu);
@@ -36,17 +35,12 @@ const RestaurantDetailsFilterTabs = ({ restaurantMenu }) => {
       value: restaurantMenu?.page_data?.navbarSection[3]?.subType,
       desc: <PhotoGallery restaurantMenu={restaurantMenu} />,
     },
-    {
-      label: restaurantMenu?.page_data?.navbarSection[4]?.title,
-      value: restaurantMenu?.page_data?.navbarSection[4]?.subType,
-      desc: <RestaurantMenu restaurantMenu={restaurantMenu} />,
-    },
   ];
   return (
     <div>
       <Tabs value="html" className="max-w-full mt-5">
         <TabsHeader
-          className="bg-transparent space-x-16 text-xl"
+          className="bg-transparent space-x-48 text-xl"
           indicatorProps={{
             className:
               'border-b border-secondary border-b-2 shadow-none !text-gray-900',
