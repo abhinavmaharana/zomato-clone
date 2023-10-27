@@ -4,6 +4,7 @@
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../../../../../../../utils/Redux/cartSlice';
+import StarRating from './StarRating/StarRating';
 
 const RestaurantCard = ({ menu }) => {
   const [resCard, setResCard] = useState([]);
@@ -18,6 +19,8 @@ const RestaurantCard = ({ menu }) => {
   useEffect(() => {
     setResCard(menu?.menu?.categories);
   }, []);
+
+  console.log(resCard);
 
   return (
     <div className="mt-2 space-y-4">
@@ -42,8 +45,12 @@ const RestaurantCard = ({ menu }) => {
                     <h3 className="text-lg font-semibold">
                       {item?.item?.name}
                     </h3>
-                    <p>Rating: {item?.item?.rating?.value}</p>
-                    <p className="font-bold">₹ {item?.item?.display_price}</p>
+                    <p className="">
+                      <StarRating star={item?.item?.rating?.value} />
+                    </p>
+                    <p className="font-bold">
+                      ₹ {Math.round(item?.item?.display_price)}
+                    </p>
                     <p className="line-clamp-2">{item?.item?.desc}</p>
                   </div>
                   <button

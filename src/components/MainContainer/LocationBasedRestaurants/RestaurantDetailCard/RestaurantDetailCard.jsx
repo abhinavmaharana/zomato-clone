@@ -38,7 +38,7 @@ const RestaurantDetailCard = () => {
   // <h1>Hello {restaurantMenu?.page_info?.pageTitle}</h1>
 
   return restaurantMenu?.length === 0 ? (
-    <div className="w-96 lg:w-[1440px] mt-6">
+    <div className="w-96 lg:w-[1440px] mt-6 mb-6">
       <ShimmerPostDetails card cta variant="EDITOR" />
     </div>
   ) : (
