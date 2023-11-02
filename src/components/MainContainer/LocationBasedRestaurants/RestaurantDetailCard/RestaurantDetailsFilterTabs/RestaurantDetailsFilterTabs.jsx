@@ -12,30 +12,40 @@ import Reviews from './Reviews/Reviews';
 import PhotoGallery from './PhotoGallery/PhotoGallery';
 
 const RestaurantDetailsFilterTabs = ({ restaurantMenu }) => {
-  // console.log(restaurantMenu);
-  // console.log(restaurantMenu?.page_data?.navbarSection[0]?.title);
+  // Ensure restaurantMenu is defined
+  if (!restaurantMenu) {
+    return null; // or display an error message
+  }
+
+  console.log(restaurantMenu);
+
+  const navbarSection = restaurantMenu?.page_data?.navbarSection;
+
+  console.log(navbarSection);
+
   const data = [
     {
-      label: restaurantMenu?.page_data?.navbarSection[0]?.title,
-      value: restaurantMenu?.page_data?.navbarSection[0]?.subType,
+      label: navbarSection[0]?.title,
+      value: navbarSection[0]?.subType,
       desc: <AboutRestaurant restaurantMenu={restaurantMenu} />,
     },
     {
-      label: restaurantMenu?.page_data?.navbarSection[1]?.title,
-      value: restaurantMenu?.page_data?.navbarSection[1]?.subType,
+      label: navbarSection[1]?.title,
+      value: navbarSection[1]?.subType,
       desc: <OrderOnline restaurantMenu={restaurantMenu} />,
     },
     {
-      label: restaurantMenu?.page_data?.navbarSection[2]?.title,
-      value: restaurantMenu?.page_data?.navbarSection[2]?.subType,
+      label: navbarSection[2]?.title,
+      value: navbarSection[2]?.subType,
       desc: <Reviews restaurantMenu={restaurantMenu} />,
     },
     {
-      label: restaurantMenu?.page_data?.navbarSection[3]?.title,
-      value: restaurantMenu?.page_data?.navbarSection[3]?.subType,
+      label: navbarSection[3]?.title,
+      value: navbarSection[3]?.subType,
       desc: <PhotoGallery restaurantMenu={restaurantMenu} />,
     },
   ];
+
   return (
     <div>
       <Tabs value="html" className="max-w-full mt-5">
