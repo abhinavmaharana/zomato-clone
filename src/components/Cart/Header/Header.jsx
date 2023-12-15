@@ -1,13 +1,16 @@
 /* eslint-disable no-unused-vars */
-import { useSelector } from 'react-redux';
-import { LOGO } from '../../../../../utils/constants';
-import { useState } from 'react';
-import { signOut } from 'firebase/auth';
-import { auth } from '../../../../../utils/firebase';
+import { useDispatch, useSelector } from 'react-redux';
+import { LOGO } from '../../../utils/constants';
+import { useEffect, useState } from 'react';
+import { auth } from '../../../utils/firebase';
 import { Link, useNavigate } from 'react-router-dom';
+import { onAuthStateChanged, signOut } from 'firebase/auth';
+import { addUser, removeUser } from '../../../utils/Redux/userSlice';
 
 const Header = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+
   const user = useSelector(store => store.user);
   const cartItems = useSelector(store => store.cart.items);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -20,6 +23,29 @@ const Header = () => {
       });
   };
 
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, user => {
+      if (user) {
+        const { uid, email, displayName, photoURL } = user;
+        dispatch(
+          addUser({
+            uid: uid,
+            email: email,
+            displayName: displayName,
+            photoURL: photoURL,
+          }),
+        );
+        navigate('/ncr/cart');
+      } else {
+        dispatch(removeUser());
+        navigate('/');
+      }
+    });
+
+    // Unsiubscribe when component unmounts
+    return () => unsubscribe();
+  }, []);
+
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
   };
@@ -27,19 +53,14 @@ const Header = () => {
   const closeDropdown = () => {
     setDropdownOpen(false);
   };
+
   return (
     <div className="bg-transparent -mt-52">
       <div className="container mx-auto">
         <div className="flex space-x-20 justify-between items-center text-black">
           <div>
             <div className="flex items-center ">
-              <Link to="/">
-                <img
-                  className="w-44 cursor-pointer"
-                  src={LOGO}
-                  alt="Download the app"
-                />
-              </Link>
+              <img className="w-44" src={LOGO} alt="Download the app" />
             </div>
           </div>
           <div className="">
@@ -56,7 +77,6 @@ const Header = () => {
               </div>
             </div>
           </div>
-
           <div className="flex justify-end items-center">
             <p>{user?.email}</p>
             <img
