@@ -8,6 +8,7 @@ import { ShimmerPostList } from 'react-shimmer-effects';
 
 const LocationBasedRestaurants = () => {
   const [locationBasedRes, setLocationBasedRes] = useState([]);
+  console.log(locationBasedRes)
 
   useEffect(() => {
     fetchLocationBasedData();
@@ -35,7 +36,7 @@ const LocationBasedRestaurants = () => {
         Delivery Restaurants in Connaught Place
       </h1>
       <div className="grid grid-cols-3 gap-11">
-        {locationBasedRes?.slice(3, 13).map(locationData => (
+        {locationBasedRes?.slice(1, 13).map(locationData => (
           <div key={locationData?.type}>
             {locationData?.isPromoted ? (
               <RestaurantCardPromoted locationData={locationData} />

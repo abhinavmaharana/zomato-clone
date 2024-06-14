@@ -7,11 +7,12 @@ const cartSlice = createSlice({
   },
   reducers: {
     addItem: (state, action) => {
-      // mutating the state here
-      state.items.push(action.payload);
+      // Each item should be an object with an id and name
+      state.items.push({ id: new Date().toISOString(), ...action.payload });
     },
-    removeItem: state => {
-      state.items.pop();
+    removeItem: (state, action) => {
+      // Remove item by id
+      state.items = state.items.filter(item => item.id !== action.payload);
     },
     clearCart: () => {
       return { items: [] };

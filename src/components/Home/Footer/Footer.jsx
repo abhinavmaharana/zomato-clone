@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
         <div className="grid grid-cols-1 gap-28 pt-8 sm:grid-cols-2 lg:grid-cols-5 lg:pt-16">
           <div className="space-y-4">
-            <p className="font-medium text-gray-900 uppercase">About Zomato</p>
+            <p className="font-medium text-gray-900 uppercase">About Foodfire</p>
 
             <ul className="mt-6 space-y-3 text-sm">
               <li>
@@ -101,7 +101,7 @@ const Footer = () => {
           </div>
 
           <div className="space-y-4">
-            <p className="font-medium text-gray-900 uppercase">Zomaverse</p>
+            <p className="font-medium text-gray-900 uppercase">Foodverse</p>
 
             <ul className="mt-6 space-y-3 text-sm">
               <li>
@@ -109,7 +109,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-700 transition hover:opacity-75"
                 >
-                  Zomato
+                  Foodfire
                 </a>
               </li>
 
@@ -145,7 +145,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-700 transition hover:opacity-75"
                 >
-                  Zomaland
+                  Foodland
                 </a>
               </li>
             </ul>
@@ -188,7 +188,7 @@ const Footer = () => {
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
-                    Zomato For Enterprise
+                    Foodfire For Enterprise
                   </a>
                 </li>
               </ul>
@@ -259,7 +259,7 @@ const Footer = () => {
               Cookie Policy, Privacy Policy and Content Policies. All trademarks
               are properties of their respective owners. 2008-
               <br />
-              2023 &copy; Zomato™ Ltd. All rights reserved. Educational Purpose
+              2023 &copy; FoodFire™ Ltd. All rights reserved. Educational Purpose
             </p>
           </div>
         </div>
