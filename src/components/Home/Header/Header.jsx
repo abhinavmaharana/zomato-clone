@@ -59,25 +59,25 @@ const Header = () => {
           <div className="flex items-center space-x-6">
             <a
               href="#"
-              className="text-primary text-lg font-semibold hover:underline"
+              className="text-primary text-md font-semibold hover:underline"
             >
               Investor Relations
             </a>
             <a
               href="#"
-              className="text-primary text-lg font-semibold hover:underline"
+              className="text-primary text-md font-semibold hover:underline"
             >
               Add Restaurant
             </a>
             <a
               href="#"
-              className="text-primary text-lg font-semibold hover:underline"
+              className="text-primary text-md font-semibold hover:underline"
               onClick={toggleLogin}
             >
               Log In
             </a>
             <button
-              className="text-white py-2 px-4 text-lg font-semibold rounded-lg hover:bg-primary-dark"
+              className="text-white py-2 px-4 text-md font-semibold rounded-lg hover:bg-primary-dark"
               onClick={toggleSignUp}
             >
               Sign Up

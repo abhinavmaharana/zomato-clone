@@ -7,7 +7,8 @@ const Footer = () => {
     <footer className="bg-lightWhite">
       <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-4 lg:px-8">
         <div className="sm:flex sm:items-center sm:justify-between">
-          <img className="w-44" src={LOGO} />
+          {/* <img className="w-44" src={LOGO} /> */}
+          <h1 className='text-4xl italic font-bold text-black'>Foodfire</h1>
 
           <ul className="mt-8 flex justify-start gap-2 sm:mt-0 sm:justify-end">
             <div>

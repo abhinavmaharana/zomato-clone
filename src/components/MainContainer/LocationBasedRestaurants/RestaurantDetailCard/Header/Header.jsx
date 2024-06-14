@@ -30,15 +30,16 @@ const Header = () => {
   return (
     <div className="bg-transparent -mt-52">
       <div className="container mx-auto">
-        <div className="flex space-x-20 justify-between items-center text-black">
+        <div className="flex space-x-24 justify-between items-center text-black">
           <div>
             <div className="flex items-center ">
               <Link to="/">
-                <img
+                {/* <img
                   className="w-44 cursor-pointer"
                   src={LOGO}
                   alt="Download the app"
-                />
+                /> */}
+                <h1 className='text-5xl italic font-bold text-black'>Foodfire</h1>
               </Link>
             </div>
           </div>

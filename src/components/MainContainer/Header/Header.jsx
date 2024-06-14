@@ -60,7 +60,8 @@ const Header = () => {
         <div className="flex space-x-20 justify-between items-center text-black">
           <div>
             <div className="flex items-center ">
-              <img className="w-44" src={LOGO} alt="Download the app" />
+              <h1 className='text-4xl italic font-bold text-black'>Foodfire</h1>
+              {/* <img className="w-44" src={LOGO} alt="Download the app" /> */}
             </div>
           </div>
           <div className="">

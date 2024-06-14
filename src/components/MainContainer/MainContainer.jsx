@@ -54,14 +54,14 @@ const MainContainer = () => {
           <div className="inset-0 px-40 mt-6 bg-lightGray p-14">
             <OrderAgainContainer />
           </div>
-          <div className="inset-0 px-40 mt-5 p-10">
+          {/* <div className="inset-0 px-40 mt-5 p-10">
             <TopBrands />
-          </div>
+          </div> */}
           <div className="inset-0 px-40 mt-5 p-10">
             <LocationBasedRestaurants />
           </div>
           <div className="inset-0 px-40 p-14">
-            <ExploreOptions />
+            {/* <ExploreOptions /> */}
           </div>
         </div>
         <Footer />

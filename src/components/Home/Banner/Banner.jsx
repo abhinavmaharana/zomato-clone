@@ -4,7 +4,8 @@ const Banner = () => {
   return (
     <div className="text-white -mt-80">
       <div className="flex flex-col space-y-8 justify-center items-center">
-        <img className="w-72" src={LOGO_WHITE} />
+        {/* <img className="w-72" src={LOGO_WHITE} /> */}
+        <h1 className='text-6xl italic font-bold'>Foodfire</h1>
         <h1 className="text-[40px]">
           Discover the best food & drinks in Delhi NCR
         </h1>
