@@ -7,6 +7,11 @@ function CartPage() {
   const dispatch = useDispatch();
 
   // Log the cart items to understand their structure
+  const calculateTotalAmount = () => {
+    return cartItems.reduce((total, item) => total + item.item.price, 0);
+  };
+
+  const totalAmount = calculateTotalAmount();
   console.log('Cart Items:', cartItems);
 
   return (
@@ -55,13 +60,24 @@ function CartPage() {
           </ul>
         )}
         {cartItems.length > 0 && (
-          <div className="mt-6 flex justify-end">
+          <div className='mt-6'>
+            <div className="flex justify-end">
+              <span className="text-xl font-semibold">Total: ₹{totalAmount}</span>
+            </div>
+          <div className="mt-6 flex justify-end items-center space-x-5">
             <button
               onClick={() => dispatch(clearCart())}
               className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-700"
             >
               Clear Cart
             </button>
+            <button
+              onClick={() => dispatch(clearCart())}
+              className="border-red-500 border-2 text-red-500 px-4 py-2 rounded hover:bg-red-700"
+            >
+              Pay Now
+            </button>
+          </div>
           </div>
         )}
       </div>
